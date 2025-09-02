@@ -1,0 +1,223 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header e Navegação */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+/* Seções */
+.section {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-bottom: #ccc 1px solid;
+}
+
+.section h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+
+
+
+
+/* Estilos para Portfólio */
+.portfolio-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.portfolio-item h3 {
+    color: #555;
+    margin-top: 0;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    background: #77aaff;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.portfolio-item a:hover {
+    background: #5588dd;
+}
+
+/* Estilos para Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+
+
+
+/* Estilos Gerais */
+/* Header e Navegação */
+/* Seções */
+/* Footer */
+/* Estilos para Portfólio */
+/* Estilos para Contato */
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .contact-form {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Suavização da rolagem para navegação interna */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Melhorias visuais adicionais */
+.section {
+    min-height: 300px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
